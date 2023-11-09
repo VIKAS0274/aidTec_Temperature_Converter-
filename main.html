@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <!-- Include Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="n.css" />
+  </head>
+  <body>
+    <div class="background-image"></div>
+    <div class="converter-container">
+      <h2>Temperature Converter</h2>
+      <br />
+      <br />
+      <p>
+        Type a value in the Fahrenheit field to convert the value to Celsius and
+        Kelvin:
+      </p>
+      <div class="form-group">
+        <label for="inputFahrenheit">Fahrenheit</label>
+        <input
+          id="inputCelcius"
+          type="number"
+          class="form-control"
+          placeholder="Fahrenheit"
+          oninput="temperatureConverter(this.value)"
+          onchange="temperatureConverter(this.value)"
+        />
+      </div>
+      <p>Celsius: <span id="outputCelcius"></span> <bold>°C</bold></p>
+      <p>Kelvin: <span id="outputKelvin"></span> <bold>K</bold></p>
+      <br />
+      <br />
+      <p>
+        Type a value in the Celcius field to convert the value to Fahrenheit and
+        Kelvin:
+      </p>
+      <div class="form-group">
+        <label for="inputCelcius">Celcius</label>
+        <input
+          id="inputFahrenheit"
+          type="number"
+          class="form-control"
+          placeholder="Celcius"
+          oninput="temperatureConverter1(this.value)"
+          onchange="temperatureConverter1(this.value)"
+        />
+      </div>
+      <p>Fahrenheit: <span id="outputFarenheit"></span> <bold>°F</bold></p>
+      <p>Kelvin: <span id="outputKelvin1"></span> <bold>K</bold></p>
+      <br />
+      <br />
+      <p>
+        Type a value in the Kelvin field to convert the value to Fahrenheit and
+        Celcius :
+      </p>
+      <div class="form-group">
+        <label for="inputKelvin">Kelvin</label>
+        <input
+          id="inputFahrenheit"
+          type="number"
+          class="form-control"
+          placeholder="Kelvin"
+          oninput="temperatureConverter2(this.value)"
+          onchange="temperatureConverter2(this.value)"
+        />
+      </div>
+      <p>Fahrenheit: <span id="outputFarenheit1"></span>°F</p>
+      <p>Celsius: <span id="outputCelcius1"></span> <bold>°C</bold></p>
+    </div>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="scripts.js"></script>
+  </body>
+</html>
